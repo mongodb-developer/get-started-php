@@ -8,5 +8,5 @@ fi
 echo "Executing ... "
 docker run --rm -e MONGODB_URI=${MONGODB_URI} \
     -v "$(pwd)":/workspace/php \
-    -w /workspace/php ghcr.io/mongodb-developer/get-started-php \
+    -w /workspace/php ghcr.io/mongodb-developer/get-started-php:0.1 \
     "php getstarted.php"

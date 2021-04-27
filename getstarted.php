@@ -43,5 +43,5 @@ $result = $collection->aggregate([
 foreach ($result as $doc) {
     var_dump($doc);
 }
-printf("Finished.")
+printf("Finished.\n")
 ?>
