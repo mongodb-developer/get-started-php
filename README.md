@@ -28,17 +28,12 @@ Execute the helper shell script followed by the MongoDB URI that you would like 
 ./get-started.sh "mongodb+srv://usr:pwd@example.mongodb.net/dbname?retryWrites=true"
 ```
 
-To use a different driver version, specify the driver version after the MongoDB URI. For example:
-```
-./get-started.sh "mongodb+srv://usr:pwd@example.mongodb.net/dbname?retryWrites=true" 1.9.0
-```
-
 ### Execute commands within the Docker environment 
 
 You can invoke a terminal session within the Docker environment using the following command.
 From the top level directory, execute: 
 ```
-docker run -it -v "$(pwd):/workspace" -w /workspace/php ghcr.io/mongodb-developer/get-started-php "sh"
+docker run -it -v "$(pwd):/workspace/php" -w /workspace/php ghcr.io/mongodb-developer/get-started-php:0.1 "sh"
 ```
 
 
